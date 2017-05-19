@@ -56,6 +56,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="row">HOLA</div>
 			<div class="row">
 				<div class="col-sm-2 col-md-offset-4">
 					<a href="#" class="btn btn-default btn-sm btn-block">Regresar</a>
