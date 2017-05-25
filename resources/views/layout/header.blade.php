@@ -1,5 +1,5 @@
 <header class="main-header">
-    <a href="{{ route('dashboard') }}" class="logo">
+    <a href="#" class="logo">
         <span class="logo-mini">ECO</b></span>
         <span class="logo-lg"><b>Economia</b></span>
     </a>

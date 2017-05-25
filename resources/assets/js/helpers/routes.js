@@ -6,7 +6,7 @@
 
             absolute: false,
             rootUrl: 'http://localhost',
-            routes : [{"host":null,"methods":["GET","HEAD"],"uri":"\/","name":"dashboard","action":"App\Http\Controllers\HomeController@index"}],
+            routes : [{"host":null,"methods":["GET","HEAD"],"uri":"cliente","name":"cliente.index","action":"App\Http\Controllers\HomeController@index"},{"host":null,"methods":["GET","HEAD"],"uri":"cliente\/create","name":"cliente.create","action":"App\Http\Controllers\HomeController@create"},{"host":null,"methods":["POST"],"uri":"cliente","name":"cliente.store","action":"App\Http\Controllers\HomeController@store"},{"host":null,"methods":["GET","HEAD"],"uri":"cliente\/{cliente}","name":"cliente.show","action":"App\Http\Controllers\HomeController@show"},{"host":null,"methods":["GET","HEAD"],"uri":"cliente\/{cliente}\/edit","name":"cliente.edit","action":"App\Http\Controllers\HomeController@edit"},{"host":null,"methods":["PUT"],"uri":"cliente\/{cliente}","name":"cliente.update","action":"App\Http\Controllers\HomeController@update"},{"host":null,"methods":["PATCH"],"uri":"cliente\/{cliente}","name":null,"action":"App\Http\Controllers\HomeController@update"},{"host":null,"methods":["DELETE"],"uri":"cliente\/{cliente}","name":"cliente.destroy","action":"App\Http\Controllers\HomeController@destroy"}],
             prefix: '',
 
             route : function (name, parameters, route) {

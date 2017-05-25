@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', ['as' => 'dashboard', 'uses' => 'HomeController@index']);
+Route::resource('cliente', 'HomeController');

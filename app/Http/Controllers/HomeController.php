@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Models\Cliente;
 
 class HomeController extends Controller
 {
@@ -14,9 +15,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('dashboard.main');
+        return view('dashboard.main');  
     }
 
     /**
@@ -36,8 +37,12 @@ class HomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {   
+        $data = $request->all();
+        if ($request->has('check_periodo_gracia')) {
+            $cliente = Cliente::periodoGracia($data);
+        }
+        $cliente = Cliente::amortizacionCredito($data);
     }
 
     /**
