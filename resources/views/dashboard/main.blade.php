@@ -4,7 +4,7 @@
 
 @section('content')
 	<section class="content">
-		<div class="box box-body box-danger">
+		<div class="box box-body box-danger jaja">
 			<div id="simulador">
 				{!! Form::open(['id' => 'cliente-form', 'data-toggle' => 'validator']) !!}
 					<div class="row">
@@ -110,7 +110,7 @@
 	            <div><%- cedula_cliente %></div>
 	        </div>
     		<div class="col-md-1 col-sm-2 col-xs-2 pull-right">
-				<a href="#" class="btn btn-danger btn-sm btn-block">
+				<a href="#" class="btn btn-danger btn-sm btn-block btn-pdf-click">
 					<i class="fa fa-file-pdf-o"></i>
 				</a>
 			</div>
@@ -208,7 +208,7 @@
 	            <div><%- cedula_cliente %></div>
 	        </div>
     		<div class="col-md-1 col-sm-2 col-xs-2 pull-right">
-				<a href="#" class="btn btn-danger btn-sm btn-block">
+				<a href="#" class="btn btn-danger btn-sm btn-block btn-pdf-click">
 					<i class="fa fa-file-pdf-o"></i>
 				</a>
 			</div>

@@ -18,7 +18,8 @@ app || (app = {});
             'submit #cliente-form': 'onStore',
             'change #ea_cliente': 'changeEA',
             'change #nominal_anual_cliente': 'changeNominal',
-            'change #ip_cliente': 'changeInterePeriodico'
+            'change #ip_cliente': 'changeInterePeriodico',
+            'click .btn-pdf-click': 'clickedBtnPdf', 
         },
         parameters: {
         },
@@ -93,7 +94,23 @@ app || (app = {});
             this.$('#ea_cliente').val(efectivoAnual.toFixed(2));
 
         },
-
+        /**
+        *
+        */ 
+        clickedBtnPdf: function(e){
+            var pdf = new jsPDF();
+            var specialElementHandlers = {
+                    'body': function (element,renderer) {
+                        return true;
+                    }
+                };
+                console.log();
+                pdf.fromHTML($('#simulador').html(),{
+                    'width': 20,
+                    'heigth':10
+                });
+                pdf.save("test.pdf");
+        },
         /*
         * Render View Element
         */

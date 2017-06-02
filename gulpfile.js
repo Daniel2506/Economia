@@ -46,6 +46,7 @@ elixir(function(mix) {
         paths.adminlte + 'plugins/iCheck/icheck.min.js',
         paths.libs + 'bootstrap-validator/dist/validator.min.js',
         paths.libs + 'jquery.inputmask/dist/jquery.inputmask.bundle.js',
+        paths.libs + 'jspdf/dist/jspdf.min.js',
         paths.libs + 'accounting.js/accounting.min.js',
         paths.libs + 'underscore/underscore.js',
         paths.libs + 'backbone/backbone.js',
