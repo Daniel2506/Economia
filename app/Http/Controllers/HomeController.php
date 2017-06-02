@@ -41,8 +41,10 @@ class HomeController extends Controller
         $data = $request->all();
         if ($request->has('check_periodo_gracia')) {
             $cliente = Cliente::periodoGracia($data);
+            return response()->json( $cliente);
         }
         $cliente = Cliente::amortizacionCredito($data);
+        return response()->json($cliente);
     }
 
     /**
@@ -53,7 +55,6 @@ class HomeController extends Controller
      */
     public function show($id)
     {
-        //
     }
 
     /**
